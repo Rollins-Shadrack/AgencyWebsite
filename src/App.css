@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+body{
+    font-family: 'Tilt Neon', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    z-index: 10001 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-primary{
+    @apply px-7 py-2 bg-brandPrimary text-white rounded hover:bg-neutralDGrey transition-all duration-300 hover:-translate-y-4;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-primary{
+    @apply px-4 py-8 text-center md:w-[300px] mb-4 mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full;
 }
